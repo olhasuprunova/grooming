@@ -1,173 +1,39 @@
-html,
-body {
-	width: 100%;
-	height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Acme|Roboto');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	max-width:800px;
+	margin:auto;
 }
 
-body {
-	background: #8eefd4
+ #logo a {
+	 text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    text-decoration:none;
 }
 
-header {
-	height: 70px;
-	margin: 1px 1px 1px 1px;
+header nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
 }
 
-#logo a {
-	margin-left: 20px;
-	float: left;
-	font-weight: bold;
-	text-decoration: none;
-	font-size: 26px;
-	text-shadow: 0 1px 0 white;
-	color: #373e47;
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
-nav {
-	overflow: visible;
-	float: right;
-}
-
-nav li {
-	float: left;
-	list-style: none;
-}
-
-nav li a {
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: blink;
-	padding: 0 30px;
-	color: #181421;
-	text-shadow: 0 1px 0 white;
-}
-
-main {
-	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-#home {
-	font-size: 30px;
-	height: 350px;
-	margin: 1px 1px 1px 1px;
-	padding: 30px;
-}
-
-.dogsimg {
-	width: 1000px;
-	display: inline-flex;
-}
-
-.dogsimg img {
-	margin: auto 50px;
-	float: left;
-	width: 2500px;
-	height: 380px;
-}
-
-#about {
-	border-top-style: solid;
-	line-height: 1.5;
-	padding: 30px;
-}
-
-
-.poodle {
-	width: 100px;
-	display: inline-flex;
-}
-
-.poodle img {
-	margin: auto -250px;
-	float: left;
-	width: 250px;
-	height: 300px;
-
-}
-
-
-.scissors {
-	width: 1000px;
-	display: inline-grid;
-}
-
-.scissors img {
-	margin: auto 50px;
-	float: right;
-	width: 250px;
-	height: 380px;
-
-}
-
-#services {
-	border-top-style: solid;
-	line-height: 1.5;
-	padding: 30px;
-}
-
-table,
-th,
-td {
-	border: 1px solid black;
-}
-
-#contactus {
-	border-top-style: solid;
-	line-height: 1.5;
-	padding: 30px;
-}
-
-.award {
-	width: 100px;
-	display: inline-flex;
-}
-
-.award img {
-	margin: auto 200px;
-	float: right;
-	width: 250px;
-	height: 200px;
-}
-
-footer {
-	height: 70px;
-	margin: 1px 1px 1px 1px;
-}
-
-.instagram {
-	width: 100px;
-	display: inline-flex;
-}
-
-.instagram img {
-	margin: auto 50px;
-	float: left;
-	width: 250px;
-	height: 150px;
-}
-
-.facebook {
-	width: 1000px;
-	display: inline-flex;
-}
-
-.facebook img {
-	margin: auto 200px;
-	float: left;
-	width: 200px;
-	height: 150px;
-}
-
-.twitter {
-	width: 1000px;
-	display: inline-flex;
-}
-
-.twitter img {
-	margin: auto 300px;
-	float: left;
-	width: 250px;
-	height: 150px;
+main .dogsimg{
+	background-image: url(../img/dogs-spa.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
